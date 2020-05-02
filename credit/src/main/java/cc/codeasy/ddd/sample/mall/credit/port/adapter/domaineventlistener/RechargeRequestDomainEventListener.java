@@ -1,4 +1,4 @@
-package cc.codeasy.ddd.sample.mall.credit.domaineventlistener;
+package cc.codeasy.ddd.sample.mall.credit.port.adapter.domaineventlistener;
 
 import cc.codeasy.ddd.sample.mall.credit.application.AccountApplicationService;
 import cc.codeasy.ddd.sample.mall.credit.application.IncreaseAccountBalanceCommand;
