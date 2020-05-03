@@ -1,7 +1,10 @@
 package cc.codeasy.ddd.sample.mall.credit.domain.model;
 
+import cc.codeasy.ddd.sample.mall.credit.common.Aggregate;
+
 import javax.persistence.*;
 
+@Aggregate
 @Entity
 public class RechargeRequest {
     @Id

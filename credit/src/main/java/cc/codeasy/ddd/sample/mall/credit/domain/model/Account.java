@@ -1,9 +1,11 @@
 package cc.codeasy.ddd.sample.mall.credit.domain.model;
 
+import cc.codeasy.ddd.sample.mall.credit.common.Aggregate;
 import cc.codeasy.ddd.sample.mall.credit.common.BaseEntity;
 
 import javax.persistence.*;
 
+@Aggregate
 @Entity
 public class Account extends BaseEntity {
     @Id
