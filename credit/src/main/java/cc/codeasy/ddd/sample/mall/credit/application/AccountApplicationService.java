@@ -45,6 +45,7 @@ public class AccountApplicationService {
         Optional<Account> account = accountRepository.findByOwner(new Owner(cmd.getOwnerId()));
         if(!account.isPresent()) throw new EntityNotFoundException("Can't find account by ownerId: "+ cmd.getOwnerId());
         account.get().increase(cmd.getRechargeRequestId(), new Amount(cmd.getAmount()));
+        accountRepository.save(account.get());
         domainEventPublisher.publish(account.get().getEvents());
 
     }
